@@ -1,0 +1,78 @@
+/*
+ * Copyright (c) 2017-present, JZoom, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the Apache-2.0 license found in the
+ * LICENSE page
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.1"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+
+
+}
+
+
+
+
+
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'jzoom-android-alert'
+
+    publishedGroupId = 'com.jzoom'
+    libraryName = 'android-alert'
+    artifact = 'android-alert'
+
+    libraryDescription = 'An android alert library.'
+
+    siteUrl = 'https://github.com/jzoom/jzoom-android-alert'
+    gitUrl = 'https://github.com/jzoom/jzoom-android-alert.git'
+
+    libraryVersion = android.defaultConfig.versionName
+
+    developerId = 'jzoom'
+    developerName = 'Randy Ren'
+    developerEmail = 'randyren811207@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
+//./gradlew install
+//./gradlew bintrayUpload
