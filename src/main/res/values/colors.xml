@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017-present, JZoom, Inc.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the Apache-2.0 license found in the
+  ~ LICENSE page
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~
+  -->
+
+<resources>
+
+    <!-- 自定义对话框 -->
+    <color name="alert_dialog_bg">#f3542d</color> <!-- 背景颜色 -->
+    <color name="alert_dialog_line">#b8b8b8</color>  <!-- 分割线 -->
+
+</resources>
