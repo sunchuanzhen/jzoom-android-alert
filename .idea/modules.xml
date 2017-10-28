@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-alert/android-alert.iml" filepath="$PROJECT_DIR$/android-alert/android-alert.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jzoom-alert.iml" filepath="$PROJECT_DIR$/jzoom-alert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzoom-android-alert.iml" filepath="$PROJECT_DIR$/jzoom-android-alert.iml" />
     </modules>
   </component>
 </project>

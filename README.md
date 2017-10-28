@@ -1,4 +1,4 @@
-
+[ ![Download](https://api.bintray.com/packages/jzoom/maven/jzoom-android-alert/images/download.svg) ](https://bintray.com/jzoom/maven/jzoom-android-alert/_latestVersion)
 
 
 
