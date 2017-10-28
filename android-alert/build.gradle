@@ -46,7 +46,7 @@ dependencies {
 
 
 
-
+/*
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'jzoom-android-alert'
@@ -73,6 +73,6 @@ ext {
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
-
+*/
 //./gradlew install
 //./gradlew bintrayUpload
