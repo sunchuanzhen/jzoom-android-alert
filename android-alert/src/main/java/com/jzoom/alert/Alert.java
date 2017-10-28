@@ -211,7 +211,7 @@ public class Alert {
                 });
                 waitDialog.show();
             }
-            TextView titleView = waitDialog.findViewById(R.id.alert_dialog_title);
+            TextView titleView = (TextView) waitDialog.findViewById(R.id.alert_dialog_title);
             titleView.setText(title);
         }
 
@@ -249,16 +249,16 @@ public class Alert {
             if(buttons.length < 1 || buttons.length > 2){
                 throw new RuntimeException("按钮的数量必须为1或者2");
             }
-            ViewGroup container = dialog.findViewById(R.id.cus_dialog_container);
+            ViewGroup container = (ViewGroup) dialog.findViewById(R.id.cus_dialog_container);
 
-            TextView titlteView = dialog.findViewById(R.id.cus_dialog_title);
+            TextView titlteView = (TextView) dialog.findViewById(R.id.cus_dialog_title);
             titlteView.setText(title==null ? content : title);
             //按钮
 
             if(buttons.length==2){
                 View view = LayoutInflater.from(context).inflate(R.layout.alert_dialog_buttons_ok_cancel,null);
                 container.addView(view);
-                Button cancel = view.findViewById(R.id.cancel);
+                Button cancel = (Button) view.findViewById(R.id.cancel);
                 cancel.setText(buttons[0]);
                 cancel.setOnClickListener(new View.OnClickListener(){
 
@@ -272,7 +272,7 @@ public class Alert {
                         dialog.cancel();
                     }
                 });
-                Button ok = view.findViewById(R.id.ok);
+                Button ok = (Button) view.findViewById(R.id.ok);
                 ok.setText(buttons[1]);
                 ok.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -327,7 +327,7 @@ public class Alert {
             alertListener = listener;
             final Dialog dialog = createDialog();
             if(contentView!=null){
-                ViewGroup container = dialog.findViewById(R.id.alert_dialog_content);
+                ViewGroup container = (ViewGroup) dialog.findViewById(R.id.alert_dialog_content);
                 container.addView(contentView);
             }
             dialog.show();
