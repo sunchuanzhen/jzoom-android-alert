@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017-present, JZoom, Inc.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the Apache-2.0 license found in the
+  ~ LICENSE page
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~
+  -->
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ok"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_dialog_btn_bottom"
+    android:padding="15dip"/>
