@@ -1,5 +1,5 @@
 [ ![Download](https://api.bintray.com/packages/jzoom/maven/jzoom-android-alert/images/download.svg) ](https://bintray.com/jzoom/maven/jzoom-android-alert/_latestVersion)
-
+[![](https://travis-ci.org/jzoom/jzoom-android-alert.svg?branch=master)](https://travis-ci.org/jzoom/jzoom-android-alert)
 
 
 # 概述
