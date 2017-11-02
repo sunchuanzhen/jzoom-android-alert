@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.jzoom.alert", appContext.getPackageName());
+        assertEquals("com.jzoom.alerttest", appContext.getPackageName());
     }
 }
